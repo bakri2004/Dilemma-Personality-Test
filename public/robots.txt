@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://historical-figure-rho.vercel.app/sitemap.xml

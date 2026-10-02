@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { QuizPage } from "./pages/QuizPage";
+import { FigurePage } from "./pages/FigurePage";
 import { HowItWorksPage } from "./pages/HowItWorksPage";
 import { AboutPage } from "./pages/AboutPage";
 import { PrivacyPage } from "./pages/PrivacyPage";
@@ -18,6 +19,7 @@ export default function App() {
         <Header />
         <Routes>
           <Route path="/" element={<QuizPage />} />
+          <Route path="/figures/:id" element={<FigurePage />} />
           <Route path="/how-it-works" element={<HowItWorksPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />

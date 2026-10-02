@@ -9,7 +9,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   name: "Dilemma Personality Test",
   tagline: "Which historical figure are you?",
-  url: "",
+  url: "https://historical-figure-rho.vercel.app",
   contactEmail: "uppervalley249@gmail.com",
   lastUpdated: "October 2026",
 };

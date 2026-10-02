@@ -5,6 +5,28 @@ export interface BookEntry {
   affiliateUrl: string;
 }
 
+/**
+ * Validates that an affiliate URL is safe, valid, non-empty, and not a placeholder.
+ */
+export function isValidAffiliateUrl(url?: string | null): boolean {
+  if (!url) return false;
+  const trimmed = url.trim();
+  if (
+    trimmed === "" ||
+    trimmed.includes("YOURTAG-20") ||
+    trimmed.includes("/dp/ASIN") ||
+    trimmed.includes("example.com")
+  ) {
+    return false;
+  }
+  try {
+    const parsed = new URL(trimmed);
+    return parsed.protocol === "http:" || parsed.protocol === "https:";
+  } catch {
+    return false;
+  }
+}
+
 export const BOOKS: Record<string, BookEntry[]> = {
   suntzu: [
     {

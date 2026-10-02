@@ -1,7 +1,23 @@
 {
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/figures/ada",
+      "destination": "/figures/ada-lovelace",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/figures/:id",
+      "destination": "/figures/:id/index.html"
+    },
+    {
+      "source": "/((?!figures/|assets/|favicon|robots\\.txt|sitemap\\.xml).*)",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/figures/(.*)",
       "destination": "/index.html"
     }
   ]

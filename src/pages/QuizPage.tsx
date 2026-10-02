@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { figures, Figure, Traits } from "../data/figures";
-import { BOOKS } from "../data/books";
+import { BOOKS, isValidAffiliateUrl } from "../data/books";
 import {
   QUESTIONS,
   TRAIT_KEYS,
@@ -229,7 +229,7 @@ export const QuizPage: React.FC = () => {
 
   const matchedFigureBooks = calculatedResult ? BOOKS[calculatedResult.figure.id] || [] : [];
   const hasAffiliateUrl = matchedFigureBooks.some(
-    (b) => b.affiliateUrl && b.affiliateUrl.trim() !== ""
+    (b) => isValidAffiliateUrl(b.affiliateUrl)
   );
 
   return (
@@ -412,9 +412,17 @@ export const QuizPage: React.FC = () => {
                   {calculatedResult.figure.name}
                 </h2>
 
-                <h3 className="font-cinzel text-lg sm:text-xl text-amber-400 font-semibold">
-                  {calculatedResult.figure.title}
-                </h3>
+                <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
+                  <h3 className="font-cinzel text-lg sm:text-xl text-amber-400 font-semibold">
+                    {calculatedResult.figure.title}
+                  </h3>
+                  <Link
+                    to={`/figures/${calculatedResult.figure.id}`}
+                    className="text-xs text-amber-400 hover:text-amber-300 underline underline-offset-2 font-medium"
+                  >
+                    View archetype profile →
+                  </Link>
+                </div>
 
                 {/* Plain line under match result */}
                 <p className="text-xs text-slate-400">
@@ -567,7 +575,7 @@ export const QuizPage: React.FC = () => {
                       </p>
                     </div>
 
-                    {book.affiliateUrl && book.affiliateUrl.trim() !== "" && (
+                    {isValidAffiliateUrl(book.affiliateUrl) && (
                       <div className="mt-4 pt-3 border-t border-slate-800 flex justify-end">
                         <a
                           href={book.affiliateUrl}
@@ -634,8 +642,16 @@ export const QuizPage: React.FC = () => {
                   {figure.bio}
                 </p>
               </div>
-              <div className="text-[11px] text-slate-400 font-mono border-t border-slate-800 pt-2">
-                <strong className="text-slate-300">Key Domain:</strong> {figure.domain}
+              <div className="text-[11px] text-slate-400 font-mono border-t border-slate-800 pt-2 flex justify-between items-center">
+                <span>
+                  <strong className="text-slate-300">Key Domain:</strong> {figure.domain}
+                </span>
+                <Link
+                  to={`/figures/${figure.id}`}
+                  className="text-amber-400 hover:text-amber-300 font-sans font-medium hover:underline shrink-0 ml-2"
+                >
+                  Profile →
+                </Link>
               </div>
             </article>
           ))}
