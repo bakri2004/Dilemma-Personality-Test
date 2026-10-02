@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { figures } from "../data/figures";
 import { FigurePortrait } from "../components/FigurePortrait";
 import { siteConfig } from "../config/site";
+import { BOOKS } from "../data/books";
 
 export const FigurePage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -28,6 +29,13 @@ export const FigurePage: React.FC = () => {
     setMeta('meta[property="og:description"]', "content", description);
     setMeta('meta[name="twitter:title"]', "content", title);
     setMeta('meta[name="twitter:description"]', "content", description);
+    let canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
+    }
+    canonical.href = `${window.location.origin}/figures/${figure.id}`;
     return () => { document.title = "Which Historical Figure Are You? Free Personality Quiz | Dilemma Personality Test"; };
   }, [figure]);
 
@@ -68,6 +76,26 @@ export const FigurePage: React.FC = () => {
         {figure.quote && (
           <blockquote className="mt-8 border-l-2 border-amber-500 pl-4 italic text-slate-400">“{figure.quote}”</blockquote>
         )}
+        {BOOKS[figure.id]?.length ? (
+          <section className="mt-8 pt-8 border-t border-slate-800">
+            <h2 className="font-cinzel text-xl font-bold text-white mb-4">Further reading</h2>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {BOOKS[figure.id].map((book) => (
+                <div key={book.title} className="rounded-xl border border-slate-800 bg-slate-950/40 p-5">
+                  <h3 className="font-cinzel font-bold text-white">{book.title}</h3>
+                  <p className="text-amber-400 text-sm mt-1">by {book.author}</p>
+                  <p className="text-slate-400 text-sm leading-relaxed mt-2">{book.note}</p>
+                  {book.affiliateUrl && (
+                    <a href={book.affiliateUrl} target="_blank" rel="sponsored noopener noreferrer"
+                      className="inline-flex mt-4 rounded-lg bg-amber-500 px-4 py-2 text-xs font-bold text-slate-950 hover:bg-amber-400">
+                      View book
+                    </a>
+                  )}
+                </div>
+              ))}
+            </div>
+          </section>
+        ) : null}
       </article>
       <div className="text-center mt-10">
         <p className="text-slate-300 mb-4">Which historical figure matches your own decision-making style?</p>
