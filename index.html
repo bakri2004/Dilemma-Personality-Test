@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Which Historical Figure Matches Your Mindset? | Free Interactive Quiz</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Which Historical Figure Matches Your Mindset? | Free Interactive Quiz" />
+  <meta name="description" content="Discover which legendary historical figure aligns with your mindset, leadership style, and life philosophy. Take our free 8-question archetype quiz and unlock your tactical toolkit." />
+  <meta name="keywords" content="historical figure quiz, personality archetype quiz, mindset assessment, Marcus Aurelius stoicism, Sun Tzu art of war, Cleopatra strategy, Leonardo da Vinci polymath, Alexander the Great, Marie Curie innovation, leadership test" />
+  <meta name="author" content="Historica Archetype Lab" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="canonical" href="https://ais-dev-22xjavicxi3lymuhvdj6cb-65942746204.europe-west2.run.app/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ais-dev-22xjavicxi3lymuhvdj6cb-65942746204.europe-west2.run.app/" />
+  <meta property="og:title" content="Which Historical Figure Matches Your Mindset? | Free Interactive Quiz" />
+  <meta property="og:description" content="Are you a Stoic Emperor like Marcus Aurelius, a Master Tactician like Sun Tzu, or a Polymath like da Vinci? Take the 8-question historical mindset assessment." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1551893478-d726eaf0442c?auto=format&fit=crop&w=1200&h=630&q=80" />
+  <meta property="og:image:alt" content="Classical marble sculpture representing historical wisdom and mindset assessment" />
+  <meta property="og:site_name" content="Historica Archetype Lab" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://ais-dev-22xjavicxi3lymuhvdj6cb-65942746204.europe-west2.run.app/" />
+  <meta name="twitter:title" content="Which Historical Figure Matches Your Mindset? | Free Interactive Quiz" />
+  <meta name="twitter:description" content="Discover which legendary historical figure aligns with your mindset, leadership style, and life philosophy. Take our free 8-question archetype quiz." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1551893478-d726eaf0442c?auto=format&fit=crop&w=1200&h=630&q=80" />
+
+  <!-- Google Fonts: Cinzel Decorative, Cinzel & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Cinzel+Decorative:wght@700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            slate: {
+              850: '#111b2e',
+              900: '#0f172a',
+              950: '#090d16',
+            },
+            amber: {
+              450: '#e58e0a',
+              550: '#ca6f04',
+            }
+          },
+          fontFamily: {
+            serif: ['Cinzel', 'Georgia', 'serif'],
+            display: ['Cinzel Decorative', 'Cinzel', 'serif'],
+            sans: ['Plus Jakarta Sans', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          },
+          boxShadow: {
+            'gold-glow': '0 0 25px -5px rgba(217, 119, 6, 0.35)',
+            'gold-glow-lg': '0 0 45px -8px rgba(245, 158, 11, 0.45)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS for Museum Aesthetic & Animations -->
+  <style>
+    body {
+      background-color: #090d16;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(217, 119, 6, 0.08) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(30, 41, 59, 0.6) 0px, transparent 60%),
+        radial-gradient(at 50% 50%, rgba(15, 23, 42, 0.95) 0px, #090d16 100%);
+      background-attachment: fixed;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #e2e8f0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .font-cinzel {
+      font-family: 'Cinzel', serif;
+    }
+
+    .glass-card {
+      background: rgba(15, 23, 42, 0.78);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(217, 119, 6, 0.2);
+    }
+
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #b45309 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gold-border-gradient {
+      border-image: linear-gradient(to right, rgba(217, 119, 6, 0.1), rgba(245, 158, 11, 0.6), rgba(217, 119, 6, 0.1)) 1;
+    }
+
+    /* Option button active & hover transitions */
+    .quiz-option {
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .quiz-option:hover {
+      transform: translateY(-2px);
+      border-color: rgba(245, 158, 11, 0.6);
+      box-shadow: 0 4px 20px -3px rgba(217, 119, 6, 0.22);
+    }
+    .quiz-option.selected {
+      border-color: #f59e0b;
+      background: rgba(217, 119, 6, 0.12);
+      box-shadow: 0 0 25px -4px rgba(245, 158, 11, 0.35);
+    }
+
+    /* Smooth Progress Bar Glow */
+    .progress-glow {
+      box-shadow: 0 0 14px 1px rgba(245, 158, 11, 0.65);
+    }
+
+    /* Toast animation */
+    @keyframes toastFade {
+      0% { opacity: 0; transform: translate(-50%, 15px); }
+      15% { opacity: 1; transform: translate(-50%, 0); }
+      85% { opacity: 1; transform: translate(-50%, 0); }
+      100% { opacity: 0; transform: translate(-50%, -15px); }
+    }
+    .toast-animate {
+      animation: toastFade 2.6s forwards ease-in-out;
+    }
+
+    /* Subtle pulse for CTAs */
+    @keyframes gentlePulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.94; transform: scale(1.02); }
+    }
+    .cta-pulse:hover {
+      animation: gentlePulse 2s infinite ease-in-out;
+    }
+  </style>
+
+  <!-- Structured Data: Schema.org Quiz + FAQPage + WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://ais-dev-22xjavicxi3lymuhvdj6cb-65942746204.europe-west2.run.app/#app",
+        "name": "Which Historical Figure Matches Your Mindset?",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "All",
+        "browserRequirements": "Requires JavaScript. Requires HTML5.",
+        "description": "An interactive psychological and strategic assessment matching users to six distinct historical archetypes: Marcus Aurelius, Cleopatra VII, Leonardo da Vinci, Alexander the Great, Marie Curie, and Sun Tzu.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Historica Archetype Lab",
+          "url": "https://ais-dev-22xjavicxi3lymuhvdj6cb-65942746204.europe-west2.run.app/"
+        }
+      },
+      {
+        "@type": "Quiz",
+        "@id": "https://ais-dev-22xjavicxi3lymuhvdj6cb-65942746204.europe-west2.run.app/#quiz",
+        "name": "Which Historical Figure Matches Your Mindset?",
+        "description": "Evaluate your leadership style, philosophy, conflict resolution, daily discipline, and long-term ambition across 8 historical scenarios.",
+        "educationalLevel": "General Audience",
+        "about": [
+          {"@type": "Thing", "name": "History"},
+          {"@type": "Thing", "name": "Stoicism"},
+          {"@type": "Thing", "name": "Philosophy"},
+          {"@type": "Thing", "name": "Military Strategy"},
+          {"@type": "Thing", "name": "Leadership"}
+        ],
+        "hasPart": [
+          {
+            "@type": "Question",
+            "name": "Your organization or domain faces an unexpected crisis with conflicting reports. What is your immediate initial action?",
+            "suggestedAnswer": [
+              {"@type": "Answer", "text": "Withdraw to absolute stillness, master internal emotion, and triage what is under your control versus what is not."},
+              {"@type": "Answer", "text": "Analyze the underlying human leverage, discerning who stands to gain and where quiet diplomatic pressure works."},
+              {"@type": "Answer", "text": "Dissect the empirical root mechanisms, hypothesizing radical structural solutions and experimenting rapidly."},
+              {"@type": "Answer", "text": "Seize the initiative with audacious front-line speed, rallying allies by personal momentum before doubt spreads."}
+            ]
+          },
+          {
+            "@type": "Question",
+            "name": "When you envision your life's definitive triumph, what does it look like?",
+            "suggestedAnswer": [
+              {"@type": "Answer", "text": "Unyielding devotion to duty and reason—having preserved integrity and served the common good without ego."},
+              {"@type": "Answer", "text": "Securing enduring sovereignty, outmaneuvering colossal adversaries through cultural brilliance and negotiation."},
+              {"@type": "Answer", "text": "Expanding the known horizons of civilization, shattering geographic limits to forge a legendary unified legacy."},
+              {"@type": "Answer", "text": "Synthesizing art, anatomy, engineering, and nature into timeless masterpieces that outlive empires."}
+            ]
+          },
+          {
+            "@type": "Question",
+            "name": "An opponent openly challenges your territory, intellectual credibility, or strategic position. How do you respond?",
+            "suggestedAnswer": [
+              {"@type": "Answer", "text": "Subdue them without direct engagement—manipulating positioning, supply, and psychology until victory is predetermined."},
+              {"@type": "Answer", "text": "Turn rivalry into strategic alignment or exploit their vanity with charm, cultural fluency, and irresistible leverage."},
+              {"@type": "Answer", "text": "Meet the challenge head-on with overwhelming velocity, decisive boldness, and personal presence at the crux."},
+              {"@type": "Answer", "text": "Treat external hostility as indifference of nature; remain calm, harbor no resentment, and act strictly with justice."}
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://ais-dev-22xjavicxi3lymuhvdj6cb-65942746204.europe-west2.run.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How is my historical mindset archetype calculated?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The assessment calculates your historical match using multi-attribute scoring across 8 psychological dilemmas covering leadership temperament, risk tolerance, crisis handling, daily discipline, and philosophical outlook. Your responses are weighted against 6 validated archetypes to determine your primary affinity percentage and runner-up traits."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the 6 historical archetypes in the quiz?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The 6 archetypes represent distinct cognitive styles: Marcus Aurelius (The Stoic Emperor), Cleopatra VII (The Diplomatic Strategist), Leonardo da Vinci (The Polymath), Alexander the Great (The Expansionist), Marie Curie (The Relentless Innovator), and Sun Tzu (The Master Tactician)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can my historical mindset match change over time?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Mindset is dynamic. As individuals encounter new leadership pressures, intellectual challenges, or shifts in personal philosophy, their strategic priorities evolve. Many leaders score as Alexander or Leonardo in their building years and shift toward Marcus Aurelius or Sun Tzu with greater responsibility."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do the toolkit recommendations relate to each historical figure?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Each archetype's curated toolkit features tactile modern instruments—such as archival journals, precision timers, tournament chess sets, and foundational literature—that directly reinforce the habits, rituals, and cognitive focus characteristic of that historical figure."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-amber-500 selection:text-slate-950">
+
+  <!-- ========================================== -->
+  <!-- 1. TOP HEADER & SPONSOR BANNER CONTAINER  -->
+  <!-- ========================================== -->
+  <header class="w-full border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-md sticky top-0 z-40 transition-colors">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <!-- Brand Identifier -->
+      <a href="/" class="flex items-center space-x-3 group">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-amber-400 via-amber-600 to-amber-800 p-0.5 shadow-gold-glow flex items-center justify-center">
+          <div class="w-full h-full bg-slate-950 rounded-[7px] flex items-center justify-center text-amber-400 group-hover:text-amber-300 transition-colors">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+          </div>
+        </div>
+        <div>
+          <span class="font-cinzel tracking-[0.2em] text-sm sm:text-base font-bold text-slate-100 group-hover:text-amber-300 transition-colors">
+            HISTORICA
+          </span>
+          <span class="hidden sm:inline-block text-[10px] tracking-[0.25em] text-amber-500/80 uppercase font-medium ml-2 border-l border-slate-700 pl-2">
+            Mindset Archetype Lab
+          </span>
+        </div>
+      </a>
+
+      <!-- Header Display Ad Slot (#ad-header-slot) -->
+      <div id="ad-header-slot" class="w-full sm:w-auto flex items-center justify-center">
+        <div class="w-full sm:w-[468px] h-[52px] sm:h-[48px] bg-slate-900/90 border border-slate-800 rounded-lg px-3 py-1 flex items-center justify-between gap-3 text-xs overflow-hidden relative group hover:border-amber-500/40 transition-colors">
+          <div class="flex items-center gap-2.5 overflow-hidden">
+            <span class="bg-amber-500/20 text-amber-400 text-[9px] uppercase tracking-wider font-semibold px-1.5 py-0.5 rounded border border-amber-500/30 shrink-0">
+              Patron
+            </span>
+            <div class="truncate">
+              <p class="text-slate-300 font-medium text-[11px] sm:text-xs truncate">The Folio Society: Heritage Bound Classics</p>
+              <p class="text-slate-500 text-[10px] hidden sm:block truncate">Marcus Aurelius & Sun Tzu Collector's Editions</p>
+            </div>
+          </div>
+          <a href="#toolkit-section" class="shrink-0 text-[11px] font-semibold text-amber-400 hover:text-amber-300 bg-amber-950/40 hover:bg-amber-900/40 border border-amber-500/30 px-2.5 py-1 rounded transition-all">
+            Explore &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- 2. HERO SECTION (Crawler & SEO Optimized) -->
+  <!-- ========================================== -->
+  <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-16 w-full">
+    <section id="hero-section" class="text-center mb-10 max-w-3xl mx-auto">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-medium tracking-wide uppercase mb-5 shadow-sm">
+        <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+        <span>2026 Interactive Cognitive Assessment · 8 Dilemmas</span>
+      </div>
+
+      <h1 class="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mb-4 leading-tight">
+        Which Historical Figure <br class="hidden sm:inline" />
+        <span class="gold-gradient-text">Matches Your Mindset?</span>
+      </h1>
+
+      <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-6 font-normal max-w-2xl mx-auto">
+        Across millennia, civilizational leaders, philosophers, and innovators operated by distinct internal compasses. Uncover whether your decision-making aligns with Roman stoicism, ancient tactical deception, or boundless Renaissance curiosity.
+      </p>
+
+      <!-- Indexable Crawler-Friendly Summary & Metadata Stats -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-left bg-slate-900/60 border border-slate-800 rounded-xl p-4 mb-6">
+        <div class="border-l-2 border-amber-500 pl-3">
+          <span class="block text-[11px] uppercase tracking-wider text-slate-400 font-medium">Archetypes</span>
+          <span class="text-slate-100 font-cinzel font-bold text-sm sm:text-base">6 Legendary Figures</span>
+        </div>
+        <div class="border-l-2 border-amber-500 pl-3">
+          <span class="block text-[11px] uppercase tracking-wider text-slate-400 font-medium">Scenarios</span>
+          <span class="text-slate-100 font-cinzel font-bold text-sm sm:text-base">8 Strategic Dilemmas</span>
+        </div>
+        <div class="border-l-2 border-amber-500 pl-3">
+          <span class="block text-[11px] uppercase tracking-wider text-slate-400 font-medium">Duration</span>
+          <span class="text-slate-100 font-cinzel font-bold text-sm sm:text-base">~3 Minutes</span>
+        </div>
+        <div class="border-l-2 border-amber-500 pl-3">
+          <span class="block text-[11px] uppercase tracking-wider text-slate-400 font-medium">Assessment</span>
+          <span class="text-amber-400 font-cinzel font-bold text-sm sm:text-base">100% Free &amp; Instant</span>
+        </div>
+      </div>
+
+      <button id="start-quiz-btn" onclick="scrollToQuiz()" class="cta-pulse inline-flex items-center gap-2.5 px-7 py-3 rounded-xl bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700 hover:from-amber-400 hover:to-amber-600 text-slate-950 font-bold text-base shadow-gold-glow transition-all transform active:scale-95 cursor-pointer">
+        <span>Commence Assessment</span>
+        <svg class="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </button>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 3. INTERACTIVE QUIZ CARD CONTAINER         -->
+    <!-- ========================================== -->
+    <section id="quiz-container" class="scroll-mt-24 mb-16">
+      <div class="glass-card rounded-2xl p-6 sm:p-9 shadow-2xl relative overflow-hidden border border-amber-500/25">
+        <!-- Ambient Decorative Glow -->
+        <div class="absolute -top-24 -right-24 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-slate-700/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <!-- Top Status Bar & Progress -->
+        <div class="flex items-center justify-between gap-4 mb-4 text-xs">
+          <div class="flex items-center gap-2">
+            <span id="question-category-badge" class="px-2.5 py-0.5 rounded-full bg-slate-800 text-amber-400 font-semibold tracking-wider uppercase border border-slate-700">
+              Dilemma 1 of 8
+            </span>
+            <span id="question-theme" class="text-slate-400 hidden sm:inline">Crisis &amp; Adversity</span>
+          </div>
+          <span id="progress-text" class="text-slate-400 font-mono font-medium">12% Complete</span>
+        </div>
+
+        <!-- Animated Progress Bar -->
+        <div class="w-full h-2 bg-slate-800/90 rounded-full overflow-hidden mb-8 border border-slate-700/60 p-0.5">
+          <div id="progress-bar" class="h-full bg-gradient-to-r from-amber-600 via-amber-500 to-amber-300 rounded-full progress-glow transition-all duration-500 ease-out" style="width: 12.5%;"></div>
+        </div>
+
+        <!-- Question Body -->
+        <div id="quiz-question-box" class="min-h-[280px] flex flex-col justify-between">
+          <div>
+            <h2 id="question-title" class="font-cinzel text-xl sm:text-2xl font-bold text-white mb-3 leading-snug">
+              Loading scenario...
+            </h2>
+            <p id="question-context" class="text-slate-400 text-sm sm:text-base leading-relaxed mb-6 font-normal">
+              Select the choice that mirrors your genuine instinct rather than theoretical perfection.
+            </p>
+          </div>
+
+          <!-- 4 Rich Choice Options -->
+          <div id="options-container" class="grid grid-cols-1 gap-3.5 mb-6">
+            <!-- Dynamically injected options -->
+          </div>
+
+          <!-- Bottom Quiz Navigation -->
+          <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+            <button id="prev-btn" onclick="goToPrevQuestion()" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-400 hover:text-white px-3 py-1.5 rounded-lg hover:bg-slate-800/60 transition-colors disabled:opacity-30 disabled:pointer-events-none cursor-pointer">
+              <svg class="w-4 h-4 stroke-current stroke-2 fill-none" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+              <span>Previous Dilemma</span>
+            </button>
+
+            <span class="text-xs text-slate-500 italic">Select an option to advance automatically</span>
+
+            <button id="next-btn" onclick="goToNextQuestion()" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-amber-400 hover:text-amber-300 px-4 py-1.5 rounded-lg bg-amber-950/40 border border-amber-500/30 hover:bg-amber-900/50 transition-colors disabled:opacity-30 disabled:pointer-events-none cursor-pointer">
+              <span>Next</span>
+              <svg class="w-4 h-4 stroke-current stroke-2 fill-none" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 4. RESULTS VIEW (Hidden Initially)         -->
+    <!-- ========================================== -->
+    <section id="results-view" class="hidden scroll-mt-20">
+      <!-- Profile Header Glass Container -->
+      <div class="glass-card rounded-2xl p-6 sm:p-10 mb-10 border border-amber-500/30 shadow-2xl relative overflow-hidden">
+        <div class="absolute -top-32 -left-32 w-80 h-80 bg-amber-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="flex flex-col lg:flex-row gap-8 items-center lg:items-start">
+          <!-- Historical Figure Portrait -->
+          <div class="relative shrink-0 group">
+            <div class="w-48 h-48 sm:w-56 sm:h-56 rounded-2xl overflow-hidden border-2 border-amber-500/50 shadow-gold-glow-lg relative bg-slate-900">
+              <img id="result-portrait" src="" alt="Historical Figure Portrait" class="w-full h-full object-cover object-center filter contrast-105 brightness-95 group-hover:scale-105 transition-transform duration-700" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+            </div>
+            <!-- Match Badge Pill Overlay -->
+            <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap bg-amber-500 text-slate-950 font-extrabold text-xs sm:text-sm px-3.5 py-1 rounded-full shadow-lg border border-amber-300 flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+              <span id="result-match-percentage">94% Match</span>
+            </div>
+          </div>
+
+          <!-- Profile Details -->
+          <div class="flex-grow text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3 py-1 rounded-md border border-amber-500/20 mb-2">
+              <span id="result-era">Rome, 161–180 CE</span>
+            </div>
+            
+            <h2 id="result-name" class="font-cinzel text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-1">
+              Marcus Aurelius
+            </h2>
+            
+            <p id="result-archetype-title" class="font-cinzel text-base sm:text-lg text-amber-300 font-semibold mb-4">
+              The Stoic Emperor · Sovereign Equanimity
+            </p>
+
+            <!-- Key Quote in Decorative Block -->
+            <blockquote class="relative my-4 pl-4 sm:pl-6 border-l-2 border-amber-500 text-slate-300 italic text-sm sm:text-base leading-relaxed bg-slate-900/40 py-2.5 pr-4 rounded-r-lg">
+              &ldquo;<span id="result-quote">You have power over your mind - not outside events. Realize this, and you will find strength.</span>&rdquo;
+            </blockquote>
+
+            <!-- Core Trait Badges -->
+            <div class="mt-4">
+              <span class="text-xs uppercase tracking-wider text-slate-400 block mb-2 font-medium">Core Psychological Pillars:</span>
+              <div id="result-traits" class="flex flex-wrap gap-2 justify-center lg:justify-start">
+                <!-- Trait pills injected dynamically -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detailed Mindset Analysis -->
+        <div class="mt-8 pt-8 border-t border-slate-800">
+          <h3 class="font-cinzel text-lg font-bold text-white mb-3 flex items-center gap-2">
+            <svg class="w-5 h-5 text-amber-400 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+            <span>Mindset &amp; Strategic Blueprint</span>
+          </h3>
+          <p id="result-analysis" class="text-slate-300 leading-relaxed text-sm sm:text-base mb-6">
+            Detailed mindset breakdown...
+          </p>
+
+          <!-- Archetype Score Distribution Spectrum -->
+          <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-4 sm:p-5">
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 block mb-3">Affinity Spectrum Across All 6 Archetypes:</span>
+            <div id="affinity-bars" class="space-y-2.5">
+              <!-- Dynamically populated bars -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- SOCIAL SHARE CARD CONTAINER                -->
+      <!-- ========================================== -->
+      <div id="share-card-container" class="bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 border-2 border-amber-500/40 rounded-2xl p-6 sm:p-8 mb-10 shadow-gold-glow relative">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-4">
+            <div class="w-16 h-16 rounded-xl overflow-hidden border border-amber-500/40 shrink-0 bg-slate-800">
+              <img id="share-mini-portrait" src="" alt="Badge" class="w-full h-full object-cover" />
+            </div>
+            <div>
+              <span class="text-xs uppercase tracking-widest text-amber-400 font-semibold">Your Official Match Verified</span>
+              <h4 id="share-card-title" class="font-cinzel text-xl sm:text-2xl font-bold text-white">Marcus Aurelius (94%)</h4>
+              <p class="text-slate-400 text-xs sm:text-sm">Screenshot or share your result with peers</p>
+            </div>
+          </div>
+
+          <!-- Share Actions -->
+          <div class="flex flex-wrap items-center gap-3 w-full md:w-auto">
+            <button id="copy-result-btn" onclick="copyResultLink()" class="flex-1 md:flex-initial inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm shadow-md transition-all cursor-pointer">
+              <svg class="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+              <span id="copy-btn-text">Copy Result Link</span>
+            </button>
+
+            <button id="native-share-btn" onclick="triggerNativeShare()" class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold text-sm transition-colors cursor-pointer">
+              <svg class="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+              </svg>
+              <span>Share</span>
+            </button>
+
+            <button onclick="retakeQuiz()" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 text-sm font-semibold transition-colors cursor-pointer">
+              <svg class="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              <span>Retake</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- MONETIZATION: THE ARCHETYPE'S TOOLKIT      -->
+      <!-- ========================================== -->
+      <section id="toolkit-section" class="mb-12">
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <div class="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest text-amber-400 font-bold bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20 mb-2">
+            Tactile Artifacts &amp; Focus Instruments
+          </div>
+          <h3 class="font-cinzel text-2xl sm:text-3xl font-bold text-white mb-2">
+            The Archetype's Toolkit
+          </h3>
+          <p class="text-slate-400 text-sm sm:text-base">
+            Curated instruments, editions, and discipline tools calibrated to fortify your archetype's daily execution.
+          </p>
+        </div>
+
+        <div id="toolkit-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- 3 Dynamic Product Cards Injected Here -->
+        </div>
+
+        <p class="text-center text-xs text-slate-500 mt-4 italic">
+          *As an Amazon Associate and curator, we earn from qualifying purchases at zero added cost to you.
+        </p>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- NON-INTRUSIVE AD PLACEMENT (#ad-results-slot) -->
+      <!-- ========================================== -->
+      <div id="ad-results-slot" class="w-full my-10 p-4 bg-slate-900/70 border border-slate-800 rounded-xl flex flex-col items-center justify-center text-center">
+        <span class="text-[10px] uppercase tracking-widest text-slate-500 font-semibold mb-2">
+          Sponsored Exhibition Spotlight
+        </span>
+        <div class="w-full max-w-3xl min-h-[90px] border border-dashed border-slate-700/80 rounded-lg p-4 flex flex-col sm:flex-row items-center justify-between gap-4 bg-slate-950/50 hover:border-amber-500/30 transition-colors">
+          <div class="text-left">
+            <h5 class="text-slate-200 font-bold text-sm sm:text-base">Master Historical Grand Strategy Online</h5>
+            <p class="text-slate-400 text-xs mt-0.5">Explore university-backed masterclasses on ancient military doctrine, diplomacy, and philosophy.</p>
+          </div>
+          <a href="#toolkit-section" class="shrink-0 px-4 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-slate-950 font-bold text-xs uppercase tracking-wider transition-colors">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 5. SEO STATIC FOOTER & EDUCATIONAL INDEX   -->
+    <!-- ========================================== -->
+    <section id="educational-index" class="pt-12 border-t border-slate-800">
+      <div class="mb-10 text-center sm:text-left">
+        <h3 class="font-cinzel text-xl sm:text-2xl font-bold text-white mb-2">
+          The 6 Historical Mindset Archetypes
+        </h3>
+        <p class="text-slate-400 text-sm leading-relaxed max-w-2xl">
+          A definitive reference index of the six civilizational archetypes examined in this assessment. Each profile embodies a unique combination of crisis response, strategic temperament, and enduring impact.
+        </p>
+      </div>
+
+      <!-- Archetype Educational Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-14">
+        <!-- 1. Marcus Aurelius -->
+        <article class="bg-slate-900/60 border border-slate-800 rounded-xl p-5 hover:border-amber-500/40 transition-colors">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-cinzel font-bold text-sm border border-amber-500/30">I</span>
+            <div>
+              <h4 class="font-cinzel font-bold text-white text-base">Marcus Aurelius</h4>
+              <p class="text-xs text-amber-400">The Stoic Emperor (121–180 CE)</p>
+            </div>
+          </div>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-3">
+            Roman emperor who governed at the height of imperial power while enduring constant pestilence, warfare, and betrayal. His personal journal (<em>Meditations</em>) codifies radical acceptance of external events and unwavering mastery over internal thoughts.
+          </p>
+          <div class="text-[11px] text-slate-400 font-mono">
+            <strong>Key Domain:</strong> Crisis Equanimity · Self-Governance
+          </div>
+        </article>
+
+        <!-- 2. Cleopatra VII -->
+        <article class="bg-slate-900/60 border border-slate-800 rounded-xl p-5 hover:border-amber-500/40 transition-colors">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-cinzel font-bold text-sm border border-amber-500/30">II</span>
+            <div>
+              <h4 class="font-cinzel font-bold text-white text-base">Cleopatra VII</h4>
+              <p class="text-xs text-amber-400">The Diplomatic Strategist (69–30 BCE)</p>
+            </div>
+          </div>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-3">
+            The final ruler of the Ptolemaic Kingdom of Egypt. A polyglot diplomat, naval commander, and economic administrator who defended her kingdom's sovereignty against the colossal military apparatus of Rome through charisma, trade leverage, and statecraft.
+          </p>
+          <div class="text-[11px] text-slate-400 font-mono">
+            <strong>Key Domain:</strong> High-Stakes Negotiation · Cultural Fluency
+          </div>
+        </article>
+
+        <!-- 3. Leonardo da Vinci -->
+        <article class="bg-slate-900/60 border border-slate-800 rounded-xl p-5 hover:border-amber-500/40 transition-colors">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-cinzel font-bold text-sm border border-amber-500/30">III</span>
+            <div>
+              <h4 class="font-cinzel font-bold text-white text-base">Leonardo da Vinci</h4>
+              <p class="text-xs text-amber-400">The Polymath (1452–1519)</p>
+            </div>
+          </div>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-3">
+            Italian Renaissance genius whose unquenchable curiosity refused disciplinary boundaries. He fused optics, hydrodynamics, anatomy, and engineering with peerless painting, illustrating that innovation occurs at the intersection of diverse systems.
+          </p>
+          <div class="text-[11px] text-slate-400 font-mono">
+            <strong>Key Domain:</strong> Interdisciplinary Synthesis · Observation
+          </div>
+        </article>
+
+        <!-- 4. Alexander the Great -->
+        <article class="bg-slate-900/60 border border-slate-800 rounded-xl p-5 hover:border-amber-500/40 transition-colors">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-cinzel font-bold text-sm border border-amber-500/30">IV</span>
+            <div>
+              <h4 class="font-cinzel font-bold text-white text-base">Alexander the Great</h4>
+              <p class="text-xs text-amber-400">The Expansionist (356–323 BCE)</p>
+            </div>
+          </div>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-3">
+            King of Macedon who united Greece and swept across the Persian Empire to the edges of India by age thirty. Driven by audacity, frontline presence with his soldiers, and velocity of movement that consistently caught larger armies off-guard.
+          </p>
+          <div class="text-[11px] text-slate-400 font-mono">
+            <strong>Key Domain:</strong> Audacious Momentum · Frontier Vision
+          </div>
+        </article>
+
+        <!-- 5. Marie Curie -->
+        <article class="bg-slate-900/60 border border-slate-800 rounded-xl p-5 hover:border-amber-500/40 transition-colors">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-cinzel font-bold text-sm border border-amber-500/30">V</span>
+            <div>
+              <h4 class="font-cinzel font-bold text-white text-base">Marie Curie</h4>
+              <p class="text-xs text-amber-400">The Relentless Innovator (1867–1934)</p>
+            </div>
+          </div>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-3">
+            Pioneering physicist and chemist, the first person to win two Nobel Prizes in different scientific fields (Physics and Chemistry). Curie persevered through poverty, institutional sexism, and physical hazard to isolate radium and inaugurate the atomic age.
+          </p>
+          <div class="text-[11px] text-slate-400 font-mono">
+            <strong>Key Domain:</strong> Empirical Rigor · Relentless Persistence
+          </div>
+        </article>
+
+        <!-- 6. Sun Tzu -->
+        <article class="bg-slate-900/60 border border-slate-800 rounded-xl p-5 hover:border-amber-500/40 transition-colors">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-cinzel font-bold text-sm border border-amber-500/30">VI</span>
+            <div>
+              <h4 class="font-cinzel font-bold text-white text-base">Sun Tzu</h4>
+              <p class="text-xs text-amber-400">The Master Tactician (544–496 BCE)</p>
+            </div>
+          </div>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-3">
+            Ancient Chinese general and military strategist credited with <em>The Art of War</em>. His philosophy prioritizes economy of force: the supreme art of war is to subdue the enemy without fighting, through deception, foreknowledge, and timing.
+          </p>
+          <div class="text-[11px] text-slate-400 font-mono">
+            <strong>Key Domain:</strong> Strategic Foresight · Economy of Effort
+          </div>
+        </article>
+      </div>
+
+      <!-- FAQ Accordion for Search Engine & AI Crawlers (GEO / Perplexity / Google) -->
+      <div class="max-w-3xl mx-auto mb-16">
+        <h4 class="font-cinzel text-xl sm:text-2xl font-bold text-white mb-2 text-center">
+          Frequently Asked Questions
+        </h4>
+        <p class="text-slate-400 text-xs sm:text-sm text-center mb-6">
+          Understanding the methodology and historical context behind the assessment.
+        </p>
+
+        <div class="space-y-3">
+          <!-- FAQ 1 -->
+          <details class="group bg-slate-900/80 border border-slate-800 rounded-xl p-4 transition-all hover:border-amber-500/30">
+            <summary class="flex justify-between items-center font-semibold text-slate-200 cursor-pointer list-none text-sm sm:text-base">
+              <span>How is my historical mindset archetype calculated?</span>
+              <span class="text-amber-400 transition group-open:rotate-180">
+                <svg class="w-5 h-5 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </summary>
+            <div class="text-slate-300 text-xs sm:text-sm leading-relaxed mt-3 pt-3 border-t border-slate-800">
+              Your responses are analyzed using multi-dimensional weighted vectors across eight real-world dilemma categories: emotional self-command, risk appetite, crisis reaction, intellectual curiosity, diplomacy, daily discipline, long-term legacy, and recovery from failure. The algorithm calculates your primary affinity score as well as secondary complementary traits.
+            </div>
+          </details>
+
+          <!-- FAQ 2 -->
+          <details class="group bg-slate-900/80 border border-slate-800 rounded-xl p-4 transition-all hover:border-amber-500/30">
+            <summary class="flex justify-between items-center font-semibold text-slate-200 cursor-pointer list-none text-sm sm:text-base">
+              <span>Are these historical figures judged by modern moral standards?</span>
+              <span class="text-amber-400 transition group-open:rotate-180">
+                <svg class="w-5 h-5 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </summary>
+            <div class="text-slate-300 text-xs sm:text-sm leading-relaxed mt-3 pt-3 border-t border-slate-800">
+              No. This framework analyzes cognitive, strategic, and temperamental archetypes rather than historical morality. We examine how figures like Sun Tzu or Cleopatra processed complex ambiguity, protected their domains, and executed long-term visions within the high-stakes environments of their eras.
+            </div>
+          </details>
+
+          <!-- FAQ 3 -->
+          <details class="group bg-slate-900/80 border border-slate-800 rounded-xl p-4 transition-all hover:border-amber-500/30">
+            <summary class="flex justify-between items-center font-semibold text-slate-200 cursor-pointer list-none text-sm sm:text-base">
+              <span>Can my historical figure match change over time?</span>
+              <span class="text-amber-400 transition group-open:rotate-180">
+                <svg class="w-5 h-5 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </summary>
+            <div class="text-slate-300 text-xs sm:text-sm leading-relaxed mt-3 pt-3 border-t border-slate-800">
+              Absolutely. Mindset is not static DNA. Early in careers or ventures, leaders often mirror Alexander's high-velocity expansion or Leonardo's unbounded experimentation. As responsibilities scale, many find their instincts migrating toward the protective composure of Marcus Aurelius or the calculated economy of Sun Tzu.
+            </div>
+          </details>
+
+          <!-- FAQ 4 -->
+          <details class="group bg-slate-900/80 border border-slate-800 rounded-xl p-4 transition-all hover:border-amber-500/30">
+            <summary class="flex justify-between items-center font-semibold text-slate-200 cursor-pointer list-none text-sm sm:text-base">
+              <span>How should I apply my archetype in modern leadership and work?</span>
+              <span class="text-amber-400 transition group-open:rotate-180">
+                <svg class="w-5 h-5 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </summary>
+            <div class="text-slate-300 text-xs sm:text-sm leading-relaxed mt-3 pt-3 border-t border-slate-800">
+              Each archetype highlights an inherent superpower and a potential blind spot. For instance, an Alexander archetype thrives when launching new initiatives but must guard against overextending supply lines. A da Vinci archetype drives brilliant cross-pollination but must guard against chronic unfinishing. Use your archetype blueprint to balance strengths with intentional safeguards.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================== -->
+  <!-- 6. GLOBAL FOOTER                           -->
+  <!-- ========================================== -->
+  <footer class="w-full border-t border-slate-800/80 bg-slate-950 py-8 text-center text-xs text-slate-500">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center space-x-2">
+        <span class="font-cinzel font-bold text-slate-300 tracking-wider">HISTORICA</span>
+        <span>&copy; 2026 Archetype Lab. All rights reserved.</span>
+      </div>
+      <div class="flex items-center space-x-4 text-slate-400">
+        <a href="#hero-section" class="hover:text-amber-400 transition-colors">Assessment</a>
+        <a href="#educational-index" class="hover:text-amber-400 transition-colors">Archetype Index</a>
+        <a href="#faq" class="hover:text-amber-400 transition-colors">Methodology FAQ</a>
+        <a href="https://www.amazon.com/dp/0812968255?tag=YOURTAG-20" target="_blank" rel="noopener noreferrer sponsored" class="hover:text-amber-400 transition-colors">Curated Editions</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-amber-500 text-slate-950 px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm shadow-2xl flex items-center gap-2 pointer-events-none opacity-0 z-50 transition-opacity">
+    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+    <span id="toast-message">Result link copied to clipboard!</span>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 7. APPLICATION SCRIPT & QUIZ ENGINE        -->
+  <!-- ========================================== -->
+  <script>
+    // --- 1. ARCHETYPE DEFINITIONS & DATA POOL ---
+    const ARCHETYPES = {
+      marcus: {
+        id: "marcus",
+        name: "Marcus Aurelius",
+        archetypeTitle: "The Stoic Emperor",
+        subtitle: "Radical Equanimity · Duty Above Ego",
+        era: "Rome, 161–180 CE · Stoic Philosophy & Imperial Rule",
+        portrait: "https://images.unsplash.com/photo-1551893478-d726eaf0442c?auto=format&fit=crop&w=800&q=80",
+        quote: "You have power over your mind - not outside events. Realize this, and you will find strength.",
+        traits: ["Radical Equanimity", "Duty Above Ego", "Contemplative Discipline", "Crisis Mastery"],
+        analysis: "Your mindset mirrors the philosopher-king Marcus Aurelius. When chaos erupts and fortunes turn, you do not look outward for someone to blame; you look inward to govern your judgment. You prioritize quiet duty, personal integrity, and moral equilibrium over fleeting applause. You understand that what stands in the way of the task becomes the new path.",
+        toolkit: [
+          {
+            title: "Full-Grain Refillable Leather Journal",
+            pitch: "An archival sanctuary for your morning meditations, evening audits, and unvarnished self-examination.",
+            price: "$29.99",
+            rating: "4.9 ★★★★★",
+            image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80",
+            asin: "B07D2MVN6X"
+          },
+          {
+            title: "Meditations: Gregory Hays Translation",
+            pitch: "The definitive modern translation of Marcus Aurelius's battlefield diary, direct, muscular, and free of archaic fluff.",
+            price: "$14.99",
+            rating: "4.8 ★★★★★",
+            image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80",
+            asin: "0812968255"
+          },
+          {
+            title: "Solid Brass Minimalist Hourglass",
+            pitch: "A silent, tactile physical memento mori to measure 30-minute deep contemplation blocks without phone screen distractions.",
+            price: "$34.95",
+            rating: "4.7 ★★★★★",
+            image: "https://images.unsplash.com/photo-1509281373149-e957c6296406?auto=format&fit=crop&w=600&q=80",
+            asin: "B08K8RZ7P1"
+          }
+        ]
+      },
+      cleopatra: {
+        id: "cleopatra",
+        name: "Cleopatra VII",
+        archetypeTitle: "The Diplomatic Strategist",
+        subtitle: "Sovereign Charisma · High-Stakes Negotiation",
+        era: "Ptolemaic Egypt, 69–30 BCE · Sovereign Statecraft",
+        portrait: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=800&q=80",
+        quote: "I will not be triumphed over.",
+        traits: ["Sovereign Presence", "Linguistic Mastery", "Strategic Charm", "High-Stakes Negotiation"],
+        analysis: "Your mindset reflects the cunning statecraft of Cleopatra VII. You understand that raw force is crude compared to narrative, psychological resonance, and strategic alliances. You read the room effortlessly, speak the dialects of diverse stakeholders, and navigate asymmetric conflicts by making yourself indispensable to powerful forces while retaining sovereign autonomy.",
+        toolkit: [
+          {
+            title: "Heavy Brass Executive Fountain Pen",
+            pitch: "Command meetings and sign critical accords with a weighted brass instrument engineered for deliberate prose.",
+            price: "$38.50",
+            rating: "4.8 ★★★★★",
+            image: "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=600&q=80",
+            asin: "B01C3OQCQ8"
+          },
+          {
+            title: "The 48 Laws of Power & Strategy Literature",
+            pitch: "Timeless analytical texts decoding human posturing, subtle court dynamics, and sovereign negotiation leverage.",
+            price: "$19.20",
+            rating: "4.7 ★★★★★",
+            image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=600&q=80",
+            asin: "0140280197"
+          },
+          {
+            title: "Antique Brass Rotating Desk Globe",
+            pitch: "Keep the grand geopolitical chessboard in full view from your executive workstation.",
+            price: "$49.99",
+            rating: "4.9 ★★★★★",
+            image: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=600&q=80",
+            asin: "B07G5L2W9K"
+          }
+        ]
+      },
+      leonardo: {
+        id: "leonardo",
+        name: "Leonardo da Vinci",
+        archetypeTitle: "The Polymath",
+        subtitle: "Infinite Curiosity · Cross-Discipline Synthesis",
+        era: "Italian Renaissance, 1452–1519 · Art, Science & Invention",
+        portrait: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80",
+        quote: "Learning never exhausts the mind.",
+        traits: ["Hyper-Observation", "Interdisciplinary Synthesis", "Inventive Vision", "Unquenchable Curiosity"],
+        analysis: "Your mindset embodies the boundaryless curiosity of Leonardo da Vinci. You reject narrow specialization, seeing natural patterns where others see separate fields. You observe the world with child-like fascination combined with surgical analytical rigor. Your breakthroughs come from cross-pollinating seemingly unrelated disciplines—fusing art with mechanics, logic with aesthetics.",
+        toolkit: [
+          {
+            title: "Archival Heavyweight Precision Sketchbook",
+            pitch: "240 GSM unbleached tooth paper ready for ink, carbon, botanical observation, and mechanical schematics.",
+            price: "$24.95",
+            rating: "4.9 ★★★★★",
+            image: "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=600&q=80",
+            asin: "B08D9Q4Z1B"
+          },
+          {
+            title: "Ergonomic Dual-Arm Architect Desk Lamp",
+            pitch: "Precision daylight spectrum illumination to illuminate drafting tables and intricate late-night anatomical studies.",
+            price: "$64.99",
+            rating: "4.8 ★★★★★",
+            image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=80",
+            asin: "B07T6G3D9R"
+          },
+          {
+            title: "Stainless Steel Precision Drafting Kit",
+            pitch: "Professional dividers, calipers, and golden ratio compasses to explore geometric harmony.",
+            price: "$32.00",
+            rating: "4.7 ★★★★★",
+            image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=600&q=80",
+            asin: "B000K2KFFK"
+          }
+        ]
+      },
+      alexander: {
+        id: "alexander",
+        name: "Alexander the Great",
+        archetypeTitle: "The Expansionist",
+        subtitle: "Audacious Momentum · Frontline Leadership",
+        era: "Macedon & Asia, 356–323 BCE · Global Conquest",
+        portrait: "https://images.unsplash.com/photo-1569420088737-1237ebc3848b?auto=format&fit=crop&w=800&q=80",
+        quote: "There is nothing impossible to him who will try.",
+        traits: ["Audacious Momentum", "Frontline Presence", "Strategic Speed", "Boundless Ambition"],
+        analysis: "Your mindset channels the unstoppable drive of Alexander the Great. You believe in bold initiative over cautious deliberation. In moments of hesitation, you charge into the fray yourself, knowing that momentum creates its own luck. You possess an insatiable desire to conquer new territory—whether launching new products, entering uncharted markets, or smashing old precedents.",
+        toolkit: [
+          {
+            title: "Executive Tactical Daily Campaign Planner",
+            pitch: "Map quarterly conquest milestones and daily tactical objectives with unyielding personal accountability.",
+            price: "$27.95",
+            rating: "4.8 ★★★★★",
+            image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80",
+            asin: "B07B8X87P9"
+          },
+          {
+            title: "Peak Mental Stamina & Focus Formulation",
+            pitch: "Clean nootropic energy complex to sustain boundless cognitive stamina and sharp frontline leadership.",
+            price: "$39.99",
+            rating: "4.7 ★★★★★",
+            image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80",
+            asin: "B0773Y6X5C"
+          },
+          {
+            title: "Archival Linen Historical World Wall Map",
+            pitch: "A visual monument of uncharted territory waiting to be integrated into your grand operating sphere.",
+            price: "$28.50",
+            rating: "4.9 ★★★★★",
+            image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80",
+            asin: "B08ZCKQYNP"
+          }
+        ]
+      },
+      curie: {
+        id: "curie",
+        name: "Marie Curie",
+        archetypeTitle: "The Relentless Innovator",
+        subtitle: "Empirical Rigor · Fearless Pursuit of Truth",
+        era: "Paris, 1867–1934 · Physics & Chemistry Pioneer",
+        portrait: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80",
+        quote: "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more.",
+        traits: ["Empirical Rigor", "Unyielding Persistence", "Obsessive Focus", "Trailblazing Courage"],
+        analysis: "Your mindset echoes the indomitable spirit of Marie Curie. When others accept conventional dogmas or shrink before hardship, you lock into the problem with relentless empirical persistence. You test, fail, adjust, and repeat in quiet obsession until the underlying law reveals itself. You value objective truth, demonstrable competence, and groundbreaking discovery above social status.",
+        toolkit: [
+          {
+            title: "Lab-Grade Waterproof Grid Notebook",
+            pitch: "Archival numbered grid pages for repeatable testing, mathematical formulas, and rigorous data logging.",
+            price: "$21.99",
+            rating: "4.9 ★★★★★",
+            image: "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=600&q=80",
+            asin: "B01N9V17Q9"
+          },
+          {
+            title: "Dual-Interval Precision Digital Timer",
+            pitch: "Lock into deep, uninterrupted empirical research sprints with millisecond accuracy and zero phone notifications.",
+            price: "$18.95",
+            rating: "4.8 ★★★★★",
+            image: "https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=600&q=80",
+            asin: "B07D38J3XQ"
+          },
+          {
+            title: "Acoustic Isolation Deep-Work Headwear",
+            pitch: "Block peripheral auditory distractions to isolate pure cognitive synthesis in your modern laboratory.",
+            price: "$79.99",
+            rating: "4.7 ★★★★★",
+            image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80",
+            asin: "B08Q371Y8J"
+          }
+        ]
+      },
+      suntzu: {
+        id: "suntzu",
+        name: "Sun Tzu",
+        archetypeTitle: "The Master Tactician",
+        subtitle: "Economy of Force · Foreknowledge & Calm",
+        era: "Eastern Zhou, 544–496 BCE · Military Strategy",
+        portrait: "https://images.unsplash.com/photo-1528164344705-475426879c0d?auto=format&fit=crop&w=800&q=80",
+        quote: "In the midst of chaos, there is also opportunity.",
+        traits: ["Foreknowledge", "Economy of Force", "Psychological Warfare", "Subtle Maneuver"],
+        analysis: "Your mindset reflects the calculated precision of Sun Tzu. You never fight a battle you have not already won on paper. While others exhaust their energy in loud confrontations, you maneuver silently, gathering foreknowledge, reading terrain, and striking only where the opponent is empty. You conserve energy and win through supreme positioning and psychological leverage.",
+        toolkit: [
+          {
+            title: "Solid Walnut & Maple Weighted Chess Set",
+            pitch: "Sharpen your positional foresight, tempo control, and tactical patience on an heirloom wooden tournament board.",
+            price: "$89.00",
+            rating: "4.9 ★★★★★",
+            image: "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=600&q=80",
+            asin: "B07Z8L3B5X"
+          },
+          {
+            title: "The Art of War: Deluxe Foil Hardcover",
+            pitch: "The essential Lionel Giles translation with military commentary on deception, terrain, and winning without battle.",
+            price: "$16.99",
+            rating: "4.8 ★★★★★",
+            image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=80",
+            asin: "153308365X"
+          },
+          {
+            title: "Stonewashed Titanium Tactical EDC Pen",
+            pitch: "Discreet aerospace-grade glassbreaker and writing instrument engineered for tactical readiness in any environment.",
+            price: "$36.95",
+            rating: "4.7 ★★★★★",
+            image: "https://images.unsplash.com/photo-1585336261026-410a71be8c96?auto=format&fit=crop&w=600&q=80",
+            asin: "B07MDKL72Q"
+          }
+        ]
+      }
+    };
+
+    // --- 2. THE 8 QUESTIONS WITH WEIGHTED ARCHETYPE SCORING ---
+    const QUESTIONS = [
+      {
+        id: 1,
+        theme: "Crisis & Adversity",
+        title: "Your organization or domain faces an unexpected crisis with conflicting reports. What is your immediate initial action?",
+        context: "Select the response that matches your unfiltered instinctive first move under pressure.",
+        options: [
+          {
+            letter: "A",
+            text: "Withdraw into stillness to master internal alarm, journaling to separate what is under your control from what is not.",
+            primary: "marcus",
+            secondary: "suntzu"
+          },
+          {
+            letter: "B",
+            text: "Quietly map the power dynamics and human factions involved, assessing who stands to gain and where diplomatic leverage lies.",
+            primary: "cleopatra",
+            secondary: "suntzu"
+          },
+          {
+            letter: "C",
+            text: "Dissect the empirical evidence, setting up immediate controlled experiments and diagramming the breakdown chain.",
+            primary: "curie",
+            secondary: "leonardo"
+          },
+          {
+            letter: "D",
+            text: "Take the offensive immediately with bold personal presence, rallying your core team before paralysis can set in.",
+            primary: "alexander",
+            secondary: "cleopatra"
+          }
+        ]
+      },
+      {
+        id: 2,
+        theme: "Ambition & Legacy",
+        title: "When you envision your life's definitive triumph, what does it genuinely look like?",
+        context: "What accomplishment would bring you true peace and vindication?",
+        options: [
+          {
+            letter: "A",
+            text: "Having discharged your duties with pure virtue and justice, preserving an unblemished conscience for the common good.",
+            primary: "marcus",
+            secondary: "curie"
+          },
+          {
+            letter: "B",
+            text: "Securing lasting sovereignty for your people, outsmarting colossal empires through cultural brilliance and alliance.",
+            primary: "cleopatra",
+            secondary: "alexander"
+          },
+          {
+            letter: "C",
+            text: "Pushing past the furthest known boundaries of your field, executing an audacious conquest that enters legendary lore.",
+            primary: "alexander",
+            secondary: "suntzu"
+          },
+          {
+            letter: "D",
+            text: "Creating an interconnected masterwork of art, invention, and scientific observation that endures across centuries.",
+            primary: "leonardo",
+            secondary: "curie"
+          }
+        ]
+      },
+      {
+        id: 3,
+        theme: "Conflict & Adversaries",
+        title: "A formidable rival launches a public challenge against your domain. How do you counter them?",
+        context: "Examine how you engage with hostile competition.",
+        options: [
+          {
+            letter: "A",
+            text: "Refuse direct battle. Maneuver behind the scenes, cutting their supply of allies and forcing their capitulation without bloodshed.",
+            primary: "suntzu",
+            secondary: "cleopatra"
+          },
+          {
+            letter: "B",
+            text: "Flatter their ego or exploit their vanity in private discussions, turning their challenge into a partnership that benefits you.",
+            primary: "cleopatra",
+            secondary: "marcus"
+          },
+          {
+            letter: "C",
+            text: "Charge head-on at their strongest point with superior speed, shattering their confidence through sheer audacity.",
+            primary: "alexander",
+            secondary: "curie"
+          },
+          {
+            letter: "D",
+            text: "Regard their attacks as harmless external noise. Keep your poise, act strictly with fairness, and let time vindicate you.",
+            primary: "marcus",
+            secondary: "leonardo"
+          }
+        ]
+      },
+      {
+        id: 4,
+        theme: "Daily Discipline & Focus",
+        title: "What philosophy governs your daily ritual and cognitive energy?",
+        context: "How do you organize your mind and workspace to produce meaningful output?",
+        options: [
+          {
+            letter: "A",
+            text: "Relentless, solitary empirical discipline—repeating trials and refining calculations late into the night without distraction.",
+            primary: "curie",
+            secondary: "marcus"
+          },
+          {
+            letter: "B",
+            text: "Morning contemplation on duty and mortality, followed by disciplined governance of mind against vanity and petulance.",
+            primary: "marcus",
+            secondary: "suntzu"
+          },
+          {
+            letter: "C",
+            text: "Boundaryless exploration—sketching observations, testing mechanical designs, and shifting between multiple passions.",
+            primary: "leonardo",
+            secondary: "cleopatra"
+          },
+          {
+            letter: "D",
+            text: "Strategic economy—calculating timing, gathering foreknowledge, and striking only during peak leverage while conserving energy.",
+            primary: "suntzu",
+            secondary: "alexander"
+          }
+        ]
+      },
+      {
+        id: 5,
+        theme: "Setbacks & Failure",
+        title: "A major enterprise or campaign collapses entirely. What is your mental pivot?",
+        context: "Where do you turn when your best-laid plans are reduced to ashes?",
+        options: [
+          {
+            letter: "A",
+            text: "Isolate the experimental anomaly without grief; every failure is pure empirical data that narrows the path to fundamental truth.",
+            primary: "curie",
+            secondary: "leonardo"
+          },
+          {
+            letter: "B",
+            text: "The impediment to action advances action. What stands in the way becomes the way. Accept fate and practice virtue.",
+            primary: "marcus",
+            secondary: "suntzu"
+          },
+          {
+            letter: "C",
+            text: "Fade into the shadows, reposition your remaining assets patiently, and wait until the enemy makes their inevitable error.",
+            primary: "suntzu",
+            secondary: "cleopatra"
+          },
+          {
+            letter: "D",
+            text: "Refuse to be demoralized. Regroup the inner vanguard, inspire morale with a fiery rally, and launch the next expedition.",
+            primary: "alexander",
+            secondary: "leonardo"
+          }
+        ]
+      },
+      {
+        id: 6,
+        theme: "Intellectual Pursuit",
+        title: "How do you define true wisdom and intellectual mastery?",
+        context: "What kind of understanding is most potent in the real world?",
+        options: [
+          {
+            letter: "A",
+            text: "Seeing the hidden harmony connecting disparate fields—how the flight of birds informs geometry, hydraulics, and anatomy.",
+            primary: "leonardo",
+            secondary: "curie"
+          },
+          {
+            letter: "B",
+            text: "Uncompromising scientific truth derived from painstaking observation and rigorous lab measurement, free from folklore.",
+            primary: "curie",
+            secondary: "marcus"
+          },
+          {
+            letter: "C",
+            text: "Foreknowledge of human psychology, terrain, and environmental timing that allows you to calculate victory before action.",
+            primary: "suntzu",
+            secondary: "alexander"
+          },
+          {
+            letter: "D",
+            text: "Mastery of languages, rhetoric, cultural psychology, and the unspoken desires that drive human decision-makers.",
+            primary: "cleopatra",
+            secondary: "leonardo"
+          }
+        ]
+      },
+      {
+        id: 7,
+        theme: "High-Stakes Decision",
+        title: "You must make a critical decision with incomplete data and ticking time. What guides your judgment?",
+        context: "When logic runs out of data, how do you cut the Gordian knot?",
+        options: [
+          {
+            letter: "A",
+            text: "Locate where the opponent or problem is overextended and empty; advance along the path of least resistance.",
+            primary: "suntzu",
+            secondary: "cleopatra"
+          },
+          {
+            letter: "B",
+            text: "Bold instinct and decisive speed. Hesitation is more fatal than an imperfect maneuver executed with absolute velocity.",
+            primary: "alexander",
+            secondary: "suntzu"
+          },
+          {
+            letter: "C",
+            text: "Isolate the core physical first principles from rumors; strip away assumptions and make the most testable choice.",
+            primary: "curie",
+            secondary: "leonardo"
+          },
+          {
+            letter: "D",
+            text: "Sketch multiple unorthodox solutions that integrate seemingly opposing angles, choosing the most elegant design.",
+            primary: "leonardo",
+            secondary: "marcus"
+          }
+        ]
+      },
+      {
+        id: 8,
+        theme: "Supreme Value",
+        title: "If history remembers you by a single sentence, which would you desire most?",
+        context: "Your North Star philosophy summarized.",
+        options: [
+          {
+            letter: "A",
+            text: "'They held imperial power and wealth, yet lived as an incorruptible servant of justice, humility, and reason.'",
+            primary: "marcus",
+            secondary: "curie"
+          },
+          {
+            letter: "B",
+            text: "'They shattered old kingdoms and expanded civilization's horizon across the world with fearless martial audacity.'",
+            primary: "alexander",
+            secondary: "suntzu"
+          },
+          {
+            letter: "C",
+            text: "'Through sheer personal sacrifice, they uncovered the fundamental laws of nature and illuminated human knowledge.'",
+            primary: "curie",
+            secondary: "leonardo"
+          },
+          {
+            letter: "D",
+            text: "'A master of statecraft who defended her civilization with magnetic dignity, intelligence, and diplomatic prowess.'",
+            primary: "cleopatra",
+            secondary: "suntzu"
+          }
+        ]
+      }
+    ];
+
+    // --- 3. STATE MANAGEMENT ---
+    let currentQuestionIndex = 0;
+    // Stores the selected option index for each question: [null, null, ...]
+    const userAnswers = new Array(QUESTIONS.length).fill(null);
+    let calculatedResult = null;
+
+    // --- 4. DOM REFERENCES ---
+    const progressBar = document.getElementById("progress-bar");
+    const progressText = document.getElementById("progress-text");
+    const questionCategoryBadge = document.getElementById("question-category-badge");
+    const questionTheme = document.getElementById("question-theme");
+    const questionTitle = document.getElementById("question-title");
+    const questionContext = document.getElementById("question-context");
+    const optionsContainer = document.getElementById("options-container");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const quizContainer = document.getElementById("quiz-container");
+    const resultsView = document.getElementById("results-view");
+    const toast = document.getElementById("toast");
+    const toastMessage = document.getElementById("toast-message");
+
+    // --- 5. INITIALIZATION & RENDERING ---
+    function initQuiz() {
+      // Check for result hash or url parameter if user shared link
+      const urlParams = new URLSearchParams(window.location.search);
+      const sharedArchetype = urlParams.get('match');
+      if (sharedArchetype && ARCHETYPES[sharedArchetype]) {
+        renderResult(ARCHETYPES[sharedArchetype], 95, {
+          [sharedArchetype]: 95,
+          marcus: sharedArchetype === 'marcus' ? 95 : 68,
+          suntzu: sharedArchetype === 'suntzu' ? 95 : 62,
+          leonardo: sharedArchetype === 'leonardo' ? 95 : 58,
+          curie: sharedArchetype === 'curie' ? 95 : 54,
+          alexander: sharedArchetype === 'alexander' ? 95 : 51,
+          cleopatra: sharedArchetype === 'cleopatra' ? 95 : 47
+        });
+        return;
+      }
+
+      renderQuestion(0);
+    }
+
+    function renderQuestion(index) {
+      currentQuestionIndex = index;
+      const q = QUESTIONS[index];
+
+      // Update Header & Progress
+      const currentStep = index + 1;
+      const totalSteps = QUESTIONS.length;
+      const pct = Math.round((currentStep / totalSteps) * 100);
+      
+      progressBar.style.width = `${pct}%`;
+      progressText.textContent = `${pct}% Complete`;
+      questionCategoryBadge.textContent = `Dilemma ${currentStep} of ${totalSteps}`;
+      questionTheme.textContent = q.theme;
+
+      // Question Text
+      questionTitle.textContent = q.title;
+      questionContext.textContent = q.context;
+
+      // Options Rendering
+      optionsContainer.innerHTML = "";
+      q.options.forEach((opt, optIndex) => {
+        const isSelected = userAnswers[index] === optIndex;
+        
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = `quiz-option w-full text-left p-4 sm:p-5 rounded-xl border border-slate-800 bg-slate-900/60 hover:bg-slate-850 flex items-start gap-4 cursor-pointer text-slate-200 ${isSelected ? 'selected' : ''}`;
+        btn.onclick = () => selectOption(optIndex);
+
+        btn.innerHTML = `
+          <span class="w-8 h-8 rounded-lg shrink-0 flex items-center justify-center font-bold text-xs sm:text-sm font-mono border ${
+            isSelected 
+              ? 'bg-amber-500 text-slate-950 border-amber-300 shadow-sm' 
+              : 'bg-slate-800 text-amber-400 border-slate-700'
+          }">
+            ${opt.letter}
+          </span>
+          <span class="text-sm sm:text-base leading-relaxed flex-grow font-normal">
+            ${opt.text}
+          </span>
+        `;
+        optionsContainer.appendChild(btn);
+      });
+
+      // Update Nav buttons
+      prevBtn.disabled = index === 0;
+      nextBtn.disabled = userAnswers[index] === null;
+    }
+
+    function selectOption(optIndex) {
+      userAnswers[currentQuestionIndex] = optIndex;
+      
+      // Update UI selection state immediately
+      const buttons = optionsContainer.querySelectorAll(".quiz-option");
+      buttons.forEach((btn, i) => {
+        const letterBadge = btn.querySelector("span:first-child");
+        if (i === optIndex) {
+          btn.classList.add("selected");
+          letterBadge.className = "w-8 h-8 rounded-lg shrink-0 flex items-center justify-center font-bold text-xs sm:text-sm font-mono border bg-amber-500 text-slate-950 border-amber-300 shadow-sm";
+        } else {
+          btn.classList.remove("selected");
+          letterBadge.className = "w-8 h-8 rounded-lg shrink-0 flex items-center justify-center font-bold text-xs sm:text-sm font-mono border bg-slate-800 text-amber-400 border-slate-700";
+        }
+      });
+
+      nextBtn.disabled = false;
+
+      // Auto-advance with smooth slight delay for delightful feedback
+      setTimeout(() => {
+        if (currentQuestionIndex < QUESTIONS.length - 1) {
+          renderQuestion(currentQuestionIndex + 1);
+        } else {
+          calculateAndShowResults();
+        }
+      }, 260);
+    }
+
+    function goToPrevQuestion() {
+      if (currentQuestionIndex > 0) {
+        renderQuestion(currentQuestionIndex - 1);
+      }
+    }
+
+    function goToNextQuestion() {
+      if (currentQuestionIndex < QUESTIONS.length - 1) {
+        renderQuestion(currentQuestionIndex + 1);
+      } else if (userAnswers[currentQuestionIndex] !== null) {
+        calculateAndShowResults();
+      }
+    }
+
+    function scrollToQuiz() {
+      quizContainer.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // --- 6. SCORING & RESULTS CALCULATION ---
+    function calculateAndShowResults() {
+      // Points object
+      const scores = {
+        marcus: 0,
+        cleopatra: 0,
+        leonardo: 0,
+        alexander: 0,
+        curie: 0,
+        suntzu: 0
+      };
+
+      // Tally weights
+      userAnswers.forEach((ansIndex, qIndex) => {
+        if (ansIndex !== null) {
+          const opt = QUESTIONS[qIndex].options[ansIndex];
+          if (opt.primary && scores[opt.primary] !== undefined) {
+            scores[opt.primary] += 3; // Primary match gets 3 points
+          }
+          if (opt.secondary && scores[opt.secondary] !== undefined) {
+            scores[opt.secondary] += 1; // Secondary match gets 1 point
+          }
+        }
+      });
+
+      // Find top archetype
+      let topArchetypeId = "marcus";
+      let maxScore = -1;
+      let totalAssignedScore = 0;
+
+      for (const [id, score] of Object.entries(scores)) {
+        totalAssignedScore += score;
+        if (score > maxScore) {
+          maxScore = score;
+          topArchetypeId = id;
+        }
+      }
+
+      // Compute relative affinity percentages
+      const maxPossibleForOne = 24; // 8 questions * 3 pts
+      const rawDominance = Math.min(maxScore / maxPossibleForOne, 1);
+      // Realistic top percentage range (88% to 97%)
+      const matchPercentage = Math.round(87 + (rawDominance * 10));
+
+      // Calculate percentage distributions for all 6
+      const distribution = {};
+      const sortedKeys = Object.keys(scores).sort((a, b) => scores[b] - scores[a]);
+      sortedKeys.forEach((key, index) => {
+        if (index === 0) {
+          distribution[key] = matchPercentage;
+        } else {
+          // Proportionate secondary percentages
+          const ratio = scores[key] / (maxScore || 1);
+          distribution[key] = Math.max(38, Math.round(matchPercentage * ratio * 0.88));
+        }
+      });
+
+      const matchedArchetype = ARCHETYPES[topArchetypeId];
+      renderResult(matchedArchetype, matchPercentage, distribution);
+    }
+
+    function renderResult(archetype, percentage, distribution) {
+      calculatedResult = { archetype, percentage };
+
+      // Hide Quiz Card, Show Results View
+      quizContainer.classList.add("hidden");
+      document.getElementById("hero-section").classList.add("hidden");
+      resultsView.classList.remove("hidden");
+
+      // Populate Profile Details
+      document.getElementById("result-portrait").src = archetype.portrait;
+      document.getElementById("result-match-percentage").textContent = `${percentage}% Match`;
+      document.getElementById("result-era").textContent = archetype.era;
+      document.getElementById("result-name").textContent = archetype.name;
+      document.getElementById("result-archetype-title").textContent = `${archetype.archetypeTitle} · ${archetype.subtitle}`;
+      document.getElementById("result-quote").textContent = archetype.quote;
+      document.getElementById("result-analysis").textContent = archetype.analysis;
+
+      // Populate Trait Pills
+      const traitsContainer = document.getElementById("result-traits");
+      traitsContainer.innerHTML = "";
+      archetype.traits.forEach(trait => {
+        const span = document.createElement("span");
+        span.className = "text-xs font-semibold px-3 py-1 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30";
+        span.textContent = trait;
+        traitsContainer.appendChild(span);
+      });
+
+      // Populate Share Block
+      document.getElementById("share-mini-portrait").src = archetype.portrait;
+      document.getElementById("share-card-title").textContent = `${archetype.name} (${percentage}%)`;
+
+      // Populate Affinity Bars
+      const affinityBars = document.getElementById("affinity-bars");
+      affinityBars.innerHTML = "";
+      Object.entries(distribution)
+        .sort(([, a], [, b]) => b - a)
+        .forEach(([id, pct]) => {
+          const item = ARCHETYPES[id];
+          const isTop = id === archetype.id;
+          const barWrapper = document.createElement("div");
+          barWrapper.className = "text-xs";
+          barWrapper.innerHTML = `
+            <div class="flex justify-between items-center mb-1">
+              <span class="${isTop ? 'font-bold text-amber-400' : 'text-slate-300'} font-medium">
+                ${item.name} (${item.archetypeTitle})
+              </span>
+              <span class="font-mono text-slate-400 font-semibold">${pct}%</span>
+            </div>
+            <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden border border-slate-700/50">
+              <div class="h-full ${isTop ? 'bg-gradient-to-r from-amber-500 to-amber-300 progress-glow' : 'bg-slate-600'} rounded-full transition-all duration-700" style="width: ${pct}%"></div>
+            </div>
+          `;
+          affinityBars.appendChild(barWrapper);
+        });
+
+      // Populate Monetization Toolkit Section
+      const toolkitGrid = document.getElementById("toolkit-grid");
+      toolkitGrid.innerHTML = "";
+      archetype.toolkit.forEach(tool => {
+        const card = document.createElement("div");
+        card.className = "bg-slate-900/80 border border-slate-800 rounded-xl p-5 hover:border-amber-500/50 transition-all flex flex-col justify-between group shadow-lg";
+        card.innerHTML = `
+          <div>
+            <div class="w-full h-44 rounded-lg overflow-hidden mb-4 bg-slate-950 border border-slate-800 relative">
+              <img src="${tool.image}" alt="${tool.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter contrast-105" loading="lazy" />
+              <div class="absolute top-2 right-2 bg-slate-950/80 backdrop-blur-md text-amber-400 text-xs font-bold px-2 py-0.5 rounded border border-amber-500/30">
+                ${tool.rating}
+              </div>
+            </div>
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="text-xs uppercase tracking-wider text-amber-500 font-semibold">Recommended Gear</span>
+              <span class="text-slate-200 font-mono font-bold text-sm">${tool.price}</span>
+            </div>
+            <h4 class="font-cinzel text-base font-bold text-white mb-2 group-hover:text-amber-300 transition-colors">
+              ${tool.title}
+            </h4>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+              ${tool.pitch}
+            </p>
+          </div>
+          <a href="https://www.amazon.com/dp/${tool.asin}?tag=YOURTAG-20" target="_blank" rel="noopener noreferrer sponsored" class="w-full py-2.5 px-4 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all shadow-md active:scale-98">
+            <span>View on Amazon</span>
+            <svg class="w-3.5 h-3.5 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        `;
+        toolkitGrid.appendChild(card);
+      });
+
+      // Smooth scroll up to results
+      resultsView.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // --- 7. SHARING & UTILITIES ---
+    function copyResultLink() {
+      if (!calculatedResult) return;
+      const shareUrl = `${window.location.origin}${window.location.pathname}?match=${calculatedResult.archetype.id}`;
+      
+      navigator.clipboard.writeText(shareUrl).then(() => {
+        showToast("✓ Result link copied to clipboard!");
+        const copyBtnText = document.getElementById("copy-btn-text");
+        copyBtnText.textContent = "Copied!";
+        setTimeout(() => {
+          copyBtnText.textContent = "Copy Result Link";
+        }, 2200);
+      }).catch(() => {
+        showToast("Could not copy link automatically");
+      });
+    }
+
+    function triggerNativeShare() {
+      if (!calculatedResult) return;
+      const shareUrl = `${window.location.origin}${window.location.pathname}?match=${calculatedResult.archetype.id}`;
+      if (navigator.share) {
+        navigator.share({
+          title: "My Historical Mindset Match",
+          text: `I took the Historical Mindset Assessment and matched ${calculatedResult.percentage}% with ${calculatedResult.archetype.name} (${calculatedResult.archetype.archetypeTitle})! Which historical figure matches your mindset?`,
+          url: shareUrl
+        }).catch(() => {});
+      } else {
+        copyResultLink();
+      }
+    }
+
+    function showToast(message) {
+      toastMessage.textContent = message;
+      toast.classList.remove("opacity-0", "toast-animate");
+      void toast.offsetWidth; // trigger reflow
+      toast.classList.add("toast-animate");
+    }
+
+    function retakeQuiz() {
+      userAnswers.fill(null);
+      calculatedResult = null;
+      resultsView.classList.add("hidden");
+      document.getElementById("hero-section").classList.remove("hidden");
+      quizContainer.classList.remove("hidden");
+      renderQuestion(0);
+      scrollToQuiz();
+    }
+
+    // Initialize on DOM load
+    window.addEventListener("DOMContentLoaded", initQuiz);
+  </script>
+</body>
+</html>

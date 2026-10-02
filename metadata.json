@@ -1,0 +1,6 @@
+{
+  "name": "Which Historical Figure Matches Your Mindset?",
+  "description": "Discover which legendary historical figure aligns with your mindset, leadership style, and life philosophy. Take our free 8-question archetype quiz.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
