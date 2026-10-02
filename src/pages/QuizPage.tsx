@@ -637,6 +637,7 @@ export const QuizPage: React.FC = () => {
               <div className="text-[11px] text-slate-400 font-mono border-t border-slate-800 pt-2">
                 <strong className="text-slate-300">Key Domain:</strong> {figure.domain}
               </div>
+              <Link to={`/figures/${figure.id}`} className="mt-3 inline-flex text-xs font-semibold text-amber-400 hover:text-amber-300 underline underline-offset-4">Explore full profile →</Link>
             </article>
           ))}
         </div>
