@@ -1,1 +1,31 @@
 @import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #090d16;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(217, 119, 6, 0.08) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(30, 41, 59, 0.6) 0px, transparent 60%),
+      radial-gradient(at 50% 50%, rgba(15, 23, 42, 0.95) 0px, #090d16 100%);
+    background-attachment: fixed;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #e2e8f0;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.glass-card {
+  background: rgba(15, 23, 42, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(217, 119, 6, 0.2);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #b45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
